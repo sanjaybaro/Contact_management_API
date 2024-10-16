@@ -12,6 +12,14 @@ app.use(express.json());
 //cors middleware
 app.use(cors());
 
+//testing api 
+//get method
+app.get("/", (req, res) => {
+  res.send("API Working");
+});
+
+
+
 //api enpoints for contact Router
 app.use("/api/contact", contactRouter);
 //api endpoints for user Router
